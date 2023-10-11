@@ -12,7 +12,7 @@ class Thing(models.Model):
 
     description = models.CharField(
         unique=False,
-        blank=False,
+        blank=True,
         max_length=120
     )
 
