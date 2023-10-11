@@ -6,13 +6,13 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 class Thing(models.Model):
     name = models.CharField(
         unique = True,
-        blank=True,
+        blank=False,
         max_length=30
     )
 
     description = models.CharField(
         unique=False,
-        blank=True,
+        blank=False,
         max_length=120
     )
 
